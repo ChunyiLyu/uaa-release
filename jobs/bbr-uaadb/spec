@@ -5,6 +5,9 @@ templates:
   config.json.erb: config/config.json
   backup.sh.erb: bin/bbr/backup
   restore.sh.erb: bin/bbr/restore
+  run_backup.sh.erb: bin/bbr/run_backup
+  run_restore.sh.erb: bin/bbr/run_restore
+  bpm.yml.erb: config/bpm.yml
 
 packages: []
 

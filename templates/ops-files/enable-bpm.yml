@@ -3,10 +3,10 @@
 - type: replace
   path: /releases/name=bpm?
   value:
-    name: bpm
-    version: 0.2.0
-    url: https://bosh.io/d/github.com/cloudfoundry-incubator/bpm-release
-    sha1: f2bd126b17b3591160f501d88d79ccf0aba1ae54
+    name: "bpm"
+    version: "0.12.3"
+    url: "https://bosh.io/d/github.com/cloudfoundry-incubator/bpm-release?v=0.12.3"
+    sha1: "313664d2e6d8485ffa0683979a401f7722f63a50"
 
 # Enable BPM in uaa job
 - type: replace

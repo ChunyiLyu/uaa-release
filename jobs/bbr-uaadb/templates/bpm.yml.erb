@@ -1,0 +1,13 @@
+processes:
+- name: backup
+  executable: /var/vcap/jobs/bbr-uaadb/bin/bbr/run_backup
+  unsafe:
+    unrestricted_volumes:
+      - path: /var/vcap/jobs/database-backup-restorer/bin
+        allow_executions: true
+- name: restore
+  executable: /var/vcap/jobs/bbr-uaadb/bin/bbr/run_restore
+  unsafe:
+    unrestricted_volumes:
+      - path: /var/vcap/jobs/database-backup-restorer/bin
+        allow_executions: true
